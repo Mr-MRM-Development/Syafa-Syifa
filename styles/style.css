@@ -1,0 +1,70 @@
+html,*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to top, #000, #100010, #100030, #200064, #200070);
+  text-align: center;
+  padding: 25px;
+}
+
+h1 {
+  color: #fd3;
+  font-family: arial;
+}
+
+h1 span {
+  color: #f24;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.album {
+  background: #ddd6;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.album::webkit-scrollbar {
+  height: 4px;
+  background: #6667;
+}
+
+.music-box {
+  background: #fff;
+  border: #888 solid 1px;
+  height: 250px;
+  box-shadow: 12px 13px 0 0 #888;
+  padding: 25px 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 25px;
+}
+
+h2 {
+  color: #2fd;
+  font-family: cursive;
+  margin: 12px 0;
+}
+
+.music-box video {
+  width: 125px;
+  height: 175px;
+}
+
+h5 {
+  color: #f42;
+  margin: 6.5px 0;
+}
+
+.master {
+  color: green;
+}
+
+h3 {
+  color: #df6;
+  margin: 6px;
+}
