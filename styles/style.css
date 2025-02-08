@@ -4,7 +4,7 @@ html,*{
 }
 
 body {
-  background: linear-gradient(to top, #000, #100010, #100030, #200064, #200070);
+  background: linear-gradient(to top, #000, #100010, #100030, #200064, #200070, #000);
   text-align: center;
   padding: 25px;
 }
@@ -58,6 +58,19 @@ h2 {
 h5 {
   color: #f42;
   margin: 6.5px 0;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .master {
