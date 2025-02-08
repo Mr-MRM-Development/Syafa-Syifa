@@ -13,6 +13,7 @@
 		</h1>
 		<h2><strong>16 th</strong> 10 - Februari - 2025</h2>
 		<h3>Silahkan Dengarkan Lagunya</h3>
+	        <div id="loading">Loading...</div>
 		<div class="album">
 				<div class="music-box">
 						<h5 class="master">16 Tahun Syafa Syifa Master</h5>
@@ -57,5 +58,17 @@
 		</div>
 		
 		<h2>Produksi <strong>M. Rizqy Mubarok</strong>.</h2>
+	<script>
+		const video = document.getElementById("myVideo");
+const loading = document.getElementById("loading");
+
+video.oncanplaythrough = function() {
+    loading.style.display = "none"; // Hilangkan loading saat video siap
+};
+
+video.onerror = function() {
+    loading.innerText = "Gagal memuat video!";
+};
+	</script>
 </body>
 </html>
