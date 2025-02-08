@@ -59,16 +59,22 @@
 		
 		<h2>Produksi <strong>M. Rizqy Mubarok</strong>.</h2>
 	<script>
-		const video = document.getElementById("myVideo");
-const loading = document.getElementById("loading");
+		const videos = document.querySelectorAll("video");
 
-video.oncanplaythrough = function() {
-    loading.style.display = "none"; // Hilangkan loading saat video siap
-};
+videos.forEach(video => {
+    const loading = document.createElement("div");
+    loading.classList.add("loading");
+    loading.innerText = "Loading...";
+    video.parentElement.appendChild(loading);
 
-video.onerror = function() {
-    loading.innerText = "Gagal memuat video!";
-};
+    video.oncanplaythrough = function() {
+        loading.style.display = "none"; // Hilangkan loading saat video siap
+    };
+
+    video.onerror = function() {
+        loading.innerText = "Gagal memuat video!";
+    };
+});
 	</script>
 </body>
 </html>
